@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 ano e 3 mesesS2</title>
+
+    <style>
+        body{
+            background-color: red;
+        }
+        .painel{
+            background-color: white;
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #Sim{
+            
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -70px;
+        }
+        .btn{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <h1>feliz 1 ano e 3 meses</h1>
+        <h2>TE AMO</h2>
+        <img src="https://media.tenor.com/bWycjZLmTDUAAAAj/stitch-love.gif" alt="">
+        <h5>cuzinho hoje?</h5>
+
+        <a href=https://www.youtube.com/watch?v=Kd_phJHKVAM><button id="Sim">Sim!</button></a>
+        <button class="btn" onclick="desvia(this)" >Nao! </button>
+               
+        
+        
+
+    </div>
+
+    <script>
+
+function desvia(t){
+            
+            var btn = t
+            
+            btn.style.position = 'absolute'
+            btn.style.button  = geraposicao(10,90)
+            btn.style.left = geraposicao(10,90)
+
+            botaonao.style.left = aleatorioX + "px";
+            botaonao.style.top = aleatorioY + "px";
+        }
+function geraposicao(min,max) {
+    return (Math.random() * (max - min) + min) + "%"
+}
+    </script>
+        
+    
+</body>
+</html>
